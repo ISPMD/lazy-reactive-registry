@@ -6,7 +6,7 @@ A singleton settings store for PySide6. Dot-notation access, reactive auto-rerun
 
 ## Setup
 
-Drop `settings_registry.py` next to your project and import the singleton:
+Drop `Registry.py` next to your project and import the singleton:
 
 ```python
 from Registry import settings
