@@ -1,6 +1,16 @@
 # SettingsRegistry
+A singleton settings store for PySide6. Dot-notation access, reactive auto-rerun, built-in light/dark theme system, and change-only signal emission. -- For the lazy devs or beginers that want a hassle free - drag and drop solution for settings / theme  - reactive Qwidgets. For prototyping small to intermediate desktop aplications.
 
-A singleton settings store for PySide6. Dot-notation access, reactive auto-rerun, built-in light/dark theme system, and change-only signal emission.
+NOT meant to be a solution for big applications. Although not that slow, it's meant to be a a solution for fast prototyping where you don't want to design a fast an performant sistem for theme switching and customizing / settings preservation and Qwidgets reactivity.
+
+Becouse it's NOT meant for production instead for prototyping it has "lazy" features such as automatic structure creation for settings with dot notations built in for the convenience of fast prototyping. You don't need to create an organized structure beforehand, it does it for you no matter how many categories/subcategories you need. You don't need to handle reactivity for every Qwidget manually when trying to get something fast on the screen but make it reactive easily enough. 
+
+What is meant for:
+I created this firstly for myself, to have a drag and drop solution when i prototype functionality for different projects / clients, when I don't know the structure of the app/module/demo beforehand and i need a solution that doesn't require me to modify a lot of code to insert it into the app or to remove it. 
+
+Got inspired by QML where reactivity is built into the language itself and missed the functionality for Qwidgets. Although QML is good and pretty fast for what it does, each dev has it's preferences and Although i like QML / SLINT it does introduce a diferent workflow / design aproach than Qwidgets what can be faster for some and slower for others.
+
+If you want a Production ready fast solution based on the same concept, it's curentlly in developement. 
 
 ---
 
