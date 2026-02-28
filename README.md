@@ -2,10 +2,6 @@
 
 A singleton settings store for PySide6. Dot-notation access, reactive auto-rerun, built-in light/dark theme system, and change-only signal emission.
 
-> **Work in progress — v0.3**
-
----
-
 ## Who is this for?
 
 A **drag-and-drop solution** for developers who want settings, theming, translations, and reactive `QWidget` updates without designing a full architecture upfront.
