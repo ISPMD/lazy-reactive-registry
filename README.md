@@ -1,16 +1,36 @@
-# SettingsRegistry
-A singleton settings store for PySide6. Dot-notation access, reactive auto-rerun, built-in light/dark theme system, and change-only signal emission. -- For the lazy devs or beginers that want a hassle free - drag and drop solution for settings / theme  - reactive Qwidgets. For prototyping small to intermediate desktop aplications.
+# Registry
 
-NOT meant to be a solution for big applications. Although not that slow, it's meant to be a a solution for fast prototyping where you don't want to design a fast an performant sistem for theme switching and customizing / settings preservation and Qwidgets reactivity.
+A singleton settings store for PySide6. Dot-notation access, reactive auto-rerun, built-in light/dark theme system, and change-only signal emission.
 
-Becouse it's NOT meant for production instead for prototyping it has "lazy" features such as automatic structure creation for settings with dot notations built in for the convenience of fast prototyping. You don't need to create an organized structure beforehand, it does it for you no matter how many categories/subcategories you need. You don't need to handle reactivity for every Qwidget manually when trying to get something fast on the screen but make it reactive easily enough. 
+> **Work in progress — v0.3**
 
-What is meant for:
-I created this firstly for myself, to have a drag and drop solution when i prototype functionality for different projects / clients, when I don't know the structure of the app/module/demo beforehand and i need a solution that doesn't require me to modify a lot of code to insert it into the app or to remove it. 
+---
 
-Got inspired by QML where reactivity is built into the language itself and missed the functionality for Qwidgets. Although QML is good and pretty fast for what it does, each dev has it's preferences and Although i like QML / SLINT it does introduce a diferent workflow / design aproach than Qwidgets what can be faster for some and slower for others.
+## Who is this for?
 
-If you want a Production ready fast solution based on the same concept, it's curentlly in developement -> https://github.com/ISPMD/reactive-registry
+A **drag-and-drop solution** for developers who want settings, theming, translations, and reactive `QWidget` updates without designing a full architecture upfront.
+
+Aimed at **fast prototyping of small to intermediate desktop applications** — when you need something on screen quickly, need it to be reactive, and don't want to wire signals by hand or restructure code every time requirements shift.
+
+> **Not meant for large or production applications.** It trades raw performance for convenience. If you need a production-ready solution built on the same concept, one is currently in development → [reactive-registry](https://github.com/ISPMD/reactive-registry)
+
+---
+
+## Why "lazy"?
+
+**No schema required.** Settings use dot-notation keys (`"audio.volume"`, `"ui.theme.mode"`) and the structure is created on the fly — no need to define categories or subcategories ahead of time.
+
+**No manual signal wiring.** Decorate a method with `@registry.reactive` and it re-runs automatically whenever any value it reads changes — whether that's a setting, a theme token, or a language switch.
+
+**Low coupling.** The package is self-contained and easy to drop into a project or pull out without touching a lot of surrounding code.
+
+---
+
+## Inspiration
+
+Inspired by **QML**, where reactivity is built into the language itself — a feature that's notably absent from `QWidgets`. QML and SLINT are great tools, but they introduce a different workflow and design approach than `QWidgets`, which can be faster for some developers and slower for others. Registry is for developers who prefer staying in the `QWidgets` world.
+
+I originally built this for myself — to have a portable solution when prototyping functionality for different projects and clients, especially when I don't know the app's structure upfront and need something I can insert or remove without rewriting a lot of code.
 
 ---
 
