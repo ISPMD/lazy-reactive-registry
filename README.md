@@ -4,7 +4,7 @@ A singleton settings store for PySide6. Dot-notation access, reactive auto-rerun
 
 ## Who is this for?
 
-A **drag-and-drop solution** for developers who want settings, theming, translations, and reactive `QWidget` updates without designing a full architecture upfront.
+A **drag-and-drop solution** for developers who want settings, theming, and reactive `QWidget` updates without designing a full architecture upfront.
 
 Aimed at **fast prototyping of small to intermediate desktop applications** — when you need something on screen quickly, need it to be reactive, and don't want to wire signals by hand or restructure code every time requirements shift.
 
