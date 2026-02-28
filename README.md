@@ -10,7 +10,7 @@ I created this firstly for myself, to have a drag and drop solution when i proto
 
 Got inspired by QML where reactivity is built into the language itself and missed the functionality for Qwidgets. Although QML is good and pretty fast for what it does, each dev has it's preferences and Although i like QML / SLINT it does introduce a diferent workflow / design aproach than Qwidgets what can be faster for some and slower for others.
 
-If you want a Production ready fast solution based on the same concept, it's curentlly in developement. 
+If you want a Production ready fast solution based on the same concept, it's curentlly in developement -> https://github.com/ISPMD/reactive-registry
 
 ---
 
